@@ -1,0 +1,33 @@
+<!-- Franisco De La Paz -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Message</title>
+  <link rel="stylesheet" href="main.css"> <!-- Link to a CSS file -->
+</head>
+<body>
+  <div class="container">
+    <h1>Access Secret Message</h1>
+    <form id="secretForm" class="input-form"> <!-- Form -->
+      <div class="form-row"> <!-- First row in the form -->
+        <button type="button" id="firstNameButton">Enter First Name</button> <!-- Button to trigger first name request -->
+        <input type="text" id="firstNameInput" required> <!-- storage and validation check for first name -->
+      </div>
+      <div class="form-row"> <!-- Second row in the form -->
+        <button type="button" id="lastNameButton">Enter Last Name</button> <!-- Button to trigger last name request -->
+        <input type="text" id="lastNameInput" required> <!-- storage and validation check forlast name -->
+      </div>
+      <div class="form-row"> <!-- Third row in the form -->
+        <button type="button" id="zipCodeButton">Enter Zip Code</button> <!-- Button to trigger zip code request -->
+        <input type="text" id="zipCodeInput" required pattern="[0-9]{5}"> <!-- storage and validation check for zip code -->
+      </div>
+      <button type="button" id="accessButton" disabled>Access Secret Message</button> <!-- Button to trigger the secret message (initially disabled) -->
+    </form>
+    <div id="secretMessage">You are a good person, with a good heart.</div> <!--Hidden secret message -->
+  </div>
+
+  <script src="script.js"></script> <!-- Link to a JavaScript file -->
+</body>
+</html>
